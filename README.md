@@ -32,3 +32,8 @@ Scrape.WaitElement(TICK,"XPATH")
 Scrape.WaitElementTag(TICK,"TAG","ATTRIB","ATTRIBVALUE")
 
 ```
+You can use selenium standard Module
+```python
+Scrape.driver.quit()
+Scrape.driver #is selenium webdriver
+```
