@@ -27,8 +27,8 @@ Data2=Scrape.Get_Element_By_Tag("TAG","ATTRIBUTE","ATTRIBVALUE")
 #Scroll to element
 Scrape.ScrollToElementXPATH("XPATH")
 Scrape.ScrollToElementTag("TAG","ATTRIBUTE","ATTRIBVALUE")
-#WaitElementLoad
+#WaitElementLoad example Scrape.WaitElement(5,"//div/div[1]")
 Scrape.WaitElement(TICK,"XPATH")
-Scrape.WaitElement(TICK,"TAG","ATTRIB","ATTRIBVALUE")
+Scrape.WaitElementTag(TICK,"TAG","ATTRIB","ATTRIBVALUE")
 
 ```
