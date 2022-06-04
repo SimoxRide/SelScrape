@@ -65,9 +65,9 @@ class SelScrape:
         self.driver.switch_to.frame(frame)
     def WaitElement(self,tick,xpath):
         return WebDriverWait(self.driver, tick).until(EC.presence_of_element_located((By.XPATH, xpath)))
-    def WaitElement(self,tick,tagname):
+    def WaitElementTag(self,tick,tagname):
         return WebDriverWait(self.driver, tick).until(EC.presence_of_element_located((By.TAG_NAME, tagname)))
-    def WaitElement(self,tick,tagname,attrib,attribvalue):
+    def WaitElementTag(self,tick,tagname,attrib,attribvalue):
         return WebDriverWait(self.driver, tick).until(EC.presence_of_element_located((By.XPATH, f"//{tagname}[@{attrib}=\"{attribvalue}\"")))
 
 
